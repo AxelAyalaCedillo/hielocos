@@ -1,2 +1,1 @@
-# hielocos
-Juego desarrollado como práctica universitaria
+# 107
