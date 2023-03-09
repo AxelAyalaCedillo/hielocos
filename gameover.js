@@ -16,7 +16,7 @@ class GameOver extends Phaser.Scene
         console.log('GAME OVER');
         this.fondo = this.add.image(ANCHO / 2, ALTO / 2,  'muerto');
         this.fondo.displayWidth = this.sys.canvas.width;
-        this.textoPuntaje = this.add.text((ANCHO / 2)-50, 10, ('Puntos\n' + puntos), { fontFamily: 'Arial', fontSize: '24px', fill: '#FFFFFF', align: 'center'});
+        this.textoPuntaje = this.add.text((ANCHO / 2)-50, 10, ('Ay ya te moriste McQueen - Puntos\n' + puntos), { fontFamily: 'Arial', fontSize: '24px', fill: '#FFFFFF', align: 'center'});
         this.textoOtraVez = this.add.text((ANCHO / 2)-100, (ALTO - 100), 'Clic/Tap\nPara jugar otra vez', { fontFamily: 'Arial', fontSize: '24px', fill: '#FFFFFF', align: 'center'});
         this.input.on('pointerdown', function(pointer){
             juego.scene.remove('GameOver');
